@@ -1,0 +1,118 @@
+.box{
+    width: 100%;
+    height: 200PX;
+    background-color: rgb(8, 97, 174);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.boxIn h1{
+    letter-spacing: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+#error-msg{
+    color: red;
+    font-size: 14px;
+}
+
+.msg {
+    position: fixed;
+    z-index: 9999;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: rgb(75, 255, 84);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    animation: .5s msg ease-in-out;
+    transition: .5s;
+    display: none;
+  }
+
+
+  .checkout {
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: #00000046;
+}
+
+.checkoutIn {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+  
+  @keyframes msg {
+    from {
+      transform: translate(-50%, -10%);
+      opacity: 0;
+    }
+  }

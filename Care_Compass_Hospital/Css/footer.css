@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.footer {
+
+    background-color: rgb(1, 27, 59);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+   
+}
+
+.outf {
+    width: 100%;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.footerIn {
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+    display: flex;
+    justify-content: center;
+}
+
+.c1 img {
+    width: 150px;
+}
+
+.fIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIn div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footerIn li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footerIn a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerIn h3 {
+    margin-bottom: 10px;
+}
+
+.socials ul {
+    display: flex;
+}
+
+.socials ul li {
+    margin-right: 15px;
+}
+
+.newsletter p {
+    margin-bottom: 10px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.newsletter input[type="email"] {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0px;
+    padding: 5px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+.newsletter button {
+    width: 100px;
+    border: 0px;
+    background-color: #0084ff;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.newsletter button:hover {
+
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .footerIn {
+        color: white;
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+
+    .c1,
+    .c2,
+    .c3,
+    .c4 {
+        display: flex;
+        justify-content: left;
+    }
+
+}
+
+@media only screen and (max-width:540px) {
+
+    .footerIn {
+        color: white;
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    .footerIn div {
+        text-align: center;
+    }
+
+    .socials ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter p {
+        text-align: center;
+    }
+
+    .c1,
+    .c2,
+    .c3,
+    .c4 {
+        display: flex;
+        justify-content: center;
+    }
+}
